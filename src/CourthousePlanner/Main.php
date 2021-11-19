@@ -11,45 +11,41 @@
 		<div class="dropdown">
 			<button class="dropbtn">Register</button>
 			<div class="dropdown-content">
-				<a href="#">Attorney</a>
-				<a href="#">Appointment</a>
+				<a href="#">Appointment</a>	
 				<a href="#">Court Case</a>
 				<a href="#">Courtroom</a>
-				<a href="#">Defendant</a>
-				<a href="#">Judge</a>
+				<a href='#'>Penal Code</a>
+				<a href="#">Person</a>	
 			</div>
 		</div>
 		<div class="dropdown">
 			<button class="dropbtn">Update</button>
 			<div class="dropdown-content">
-				<a href="#">Attorney</a>
-				<a href="#">Appointment</a>
+				<a href="#">Appointment</a>	
 				<a href="#">Court Case</a>
 				<a href="#">Courtroom</a>
-				<a href="#">Defendant</a>
-				<a href="#">Judge</a>
+				<a href='#'>Penal Code</a>
+				<a href="#">Person</a>	
 			</div>
 		</div>
 		<div class="dropdown">
 			<button class="dropbtn">Delete</button>
 			<div class="dropdown-content">
-				<a href="#">Attorney</a>
-				<a href="#">Appointment</a>
+				<a href="#">Appointment</a>	
 				<a href="#">Court Case</a>
 				<a href="#">Courtroom</a>
-				<a href="#">Defendant</a>
-				<a href="#">Judge</a>
+				<a href='#'>Penal Code</a>
+				<a href="#">Person</a>	
 			</div>
 		</div>
 		<div class="dropdown">
 			<button class="dropbtn">Search</button>
 			<div class="dropdown-content">
-				<a href="#">Attorney</a>
-				<a href="#">Appointment</a>
+				<a href="#">Appointment</a>	
 				<a href="#">Court Case</a>
 				<a href="#">Courtroom</a>
-				<a href="#">Defendant</a>
-				<a href="#">Judge</a>
+				<a href='#'>Penal Code</a>
+				<a href="#">Person</a>	
 			</div>
 		</div>
 		<a href="#stats">Stats</a>
