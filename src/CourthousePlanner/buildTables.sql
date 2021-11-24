@@ -3,17 +3,17 @@ CREATE TABLE IF NOT EXISTS CourtRoom(
 	district VARCHAR,
 	court_name VARCHAR,
 	room_num INTEGER,
-	PRIMARY KEY(room_id),
+	PRIMARY KEY(room_id)
 );
 CREATE TABLE IF NOT EXISTS Person(
 	pid INTEGER NOT NULL AUTO_INCREMENT,
-	first_name VARCHAR,
-	last_name VARCHAR,
+	first_name VARCHAR(64),
+	last_name VARCHAR(64),
 	birth_date DATE,
 	phone_number CHAR(10),
 	is_lawyer BOOLEAN,
 	is_judge BOOLEAN,
-	PRIMARY KEY(pid),
+	PRIMARY KEY(pid)
 );
 CREATE TABLE IF NOT EXISTS CourtCase(
 	case_id INTEGER NOT NULL AUTO_INCREMENT,
