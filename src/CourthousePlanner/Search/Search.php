@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../Styles/Table.css">
 <?php
 	Include("../Common/MySQLHelpers.php");
 	function buildTableFromQuery($cmd) {
@@ -10,8 +11,12 @@
 
 		echo "<table>";
 		echo "<tr>";
-		$cols = mysqli_fetch_assoc($result);
-		$cols = array_keys($cols);
+
+		$cols = $result->fetch_fields();
+		for ($i = 0; $i < count($cols); $i++) {
+			$cols[$i] = $cols[$i]->name;
+		}
+
 		for ($i = 0; $i < $result->field_count; $i += 1) {
 			echo "<th>" . $cols[$i] . "</th>";
 		}

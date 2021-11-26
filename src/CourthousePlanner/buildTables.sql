@@ -1,7 +1,7 @@
-CREATE TABLE IF NOT EXISTS CourtRoom(
+CREATE TABLE IF NOT EXISTS Courtroom(
 	room_id INTEGER NOT NULL AUTO_INCREMENT,
-	district VARCHAR,
-	court_name VARCHAR,
+	district VARCHAR(64),
+	court_name VARCHAR(64),
 	room_num INTEGER,
 	PRIMARY KEY(room_id)
 );
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS CrimeDict(
 	crime_type INTEGER,
 	PRIMARY KEY(penal_code)
 );
-CREATE TABLE IF NOT EXISTS Charges
+CREATE TABLE IF NOT EXISTS Charges(
 	case_id INTEGER NOT NULL AUTO_INCREMENT,
 	penal_code INTEGER NOT NULL,
 	charged BOOLEAN,
@@ -51,5 +51,5 @@ CREATE TABLE IF NOT EXISTS Appointment(
 	crime_code INTEGER,
 	PRIMARY KEY(apt_id),
 	FOREIGN KEY(case_id) REFERENCES CourtCase(case_id),
-	FOREIGN KEY(room_id) REFERENCES CourtRoom(room_id)
+	FOREIGN KEY(room_id) REFERENCES Courtroom(room_id)
 );

@@ -12,8 +12,9 @@ Include("Search.php");
 	<?php
 		navPanel("../");
 	?>
-	<h2>People</h2>
+	<h2>Court Cases</h2>
 	<?php
-		buildTableFromQuery("SELECT * FROM Person");
+		// TODO Use inner joins to get all info and pretty up the table
+		buildTableFromQuery("SELECT * FROM CourtCase");
 	?>
 </html>

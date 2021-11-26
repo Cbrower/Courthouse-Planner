@@ -12,8 +12,8 @@ Include("Search.php");
 	<?php
 		navPanel("../");
 	?>
-	<h2>People</h2>
+	<h2>Charges</h2>
 	<?php
-		buildTableFromQuery("SELECT * FROM Person");
+		buildTableFromQuery("SELECT * FROM Charges");
 	?>
 </html>
