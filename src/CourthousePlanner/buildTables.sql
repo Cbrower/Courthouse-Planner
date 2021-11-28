@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS CrimeDict(
 	PRIMARY KEY(penal_code)
 );
 CREATE TABLE IF NOT EXISTS Charges(
-	case_id INTEGER NOT NULL AUTO_INCREMENT,
+	case_id INTEGER NOT NULL,
 	penal_code INTEGER NOT NULL,
 	charged BOOLEAN,
 	PRIMARY KEY(case_id, penal_code),
