@@ -7,11 +7,12 @@
 		echo "<button class=\"dropbtn\">Register</button>";
 		echo "<div class=\"dropdown-content\">";
 		echo "<a href=\"#\">Appointment</a>";
-		echo "<a href=\"#\">Charge</a>";
-		echo "<a href=\"#\">Court Case</a>";
-		echo "<a href=\"#\">Courtroom</a>";
-		echo "<a href=\"#\">Penal Code</a>";
-		echo "<a href=\"#\">Person</a>";
+		echo "<a href=\"" . $pathToMain . "Create/FormPages/AppointmentForm.php\"\">Appointment</a>";
+		echo "<a href=\"" . $pathToMain . "Create/FormPages/ChargesForm.php\"\">Charge</a>";
+		echo "<a href=\"" . $pathToMain . "Create/FormPages/CaseForm.php\"\">Court Case</a>";
+		echo "<a href=\"" . $pathToMain . "Create/FormPages/CourtForm.php\"\">Courtroom</a>";
+		echo "<a href=\"" . $pathToMain . "Create/FormPages/CrimeForm.php\"\">Penal Code</a>";
+		echo "<a href=\"" . $pathToMain . "Create/FormPages/PersonForm.php\"\">Person</a>";
 		echo "</div>";
 		echo "</div>";
 		echo "<div class=\"dropdown\">";
