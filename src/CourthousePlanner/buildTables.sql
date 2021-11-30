@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS Appointment(
 	room_id INTEGER NOT NULL,
 	filing_fee REAL,
 	crime_code INTEGER,
+	apt_date DATE,
 	PRIMARY KEY(apt_id),
 	FOREIGN KEY(case_id) REFERENCES CourtCase(case_id),
 	FOREIGN KEY(room_id) REFERENCES Courtroom(room_id)
