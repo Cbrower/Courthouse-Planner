@@ -28,7 +28,7 @@ if(isset($_POST['submit']))
         $Attorney = 1;
     }
     if($person_status === "Judge"){
-        $JUDGE = 1;
+        $Judge = 1;
     }
     $sql = "INSERT INTO Person (first_name,last_name,birth_date,phone_number,is_lawyer,is_judge) VALUES ('$fname','$lname','$DOB','$phone','$Attorney','$Judge')";
     if (mysqli_query($conn, $sql)) {

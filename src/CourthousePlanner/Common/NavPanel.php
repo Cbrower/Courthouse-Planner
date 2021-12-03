@@ -6,7 +6,6 @@
 		echo "<div class=\"dropdown\">";
 		echo "<button class=\"dropbtn\">Register</button>";
 		echo "<div class=\"dropdown-content\">";
-		echo "<a href=\"#\">Appointment</a>";
 		echo "<a href=\"" . $pathToMain . "Create/FormPages/AppointmentForm.php\"\">Appointment</a>";
 		echo "<a href=\"" . $pathToMain . "Create/FormPages/ChargesForm.php\"\">Charge</a>";
 		echo "<a href=\"" . $pathToMain . "Create/FormPages/CaseForm.php\"\">Court Case</a>";
