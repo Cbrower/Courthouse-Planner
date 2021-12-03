@@ -1,7 +1,26 @@
-table, th, td {
-	border: 1px solid black;
+.sqltable table {
+	font-family: Arial;
+	border-collapse: collapse;
+	width: 100%;
 }
 
-table {
-	width: 100%;
+.sqltable table, th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.sqltable tr:nth-child(even){
+	background-color: #fafafa;
+}
+
+.sqltable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: grey;
+	color: white;
+}
+
+.sqltable tr:hover {
+	background-color: #ddd;
 }

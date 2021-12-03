@@ -14,6 +14,7 @@ Include("Search.php");
 	?>
 	<h2>Charges</h2>
 	<?php
-		buildTableFromQuery("SELECT * FROM Charges");
+		$colNames = array("Case ID", "Penal Code", "Charged");
+		buildTableFromQuery("SELECT * FROM Charges", $colNames);
 	?>
 </html>

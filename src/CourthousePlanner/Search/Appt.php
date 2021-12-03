@@ -14,7 +14,7 @@ Include("Search.php");
 	?>
 	<h2>Appointments</h2>
 	<?php
-		// TODO Use inner joins to get all info and pretty up the table
-		buildTableFromQuery("SELECT * FROM Appointment");
+		$colNames = array("Appointment ID", "Case ID", "Room ID", "Filing Fee", "Crime Code");
+		buildTableFromQuery("SELECT * FROM Appointment", $colNames);
 	?>
 </html>

@@ -14,6 +14,7 @@ Include("Search.php");
 	?>
 	<h2>Penal Codes</h2>
 	<?php
-		buildTableFromQuery("SELECT * FROM CrimeDict");
+		$colNames = array("Penal Code", "Description", "Crime Type");
+		buildTableFromQuery("SELECT * FROM CrimeDict", $colNames);
 	?>
 </html>

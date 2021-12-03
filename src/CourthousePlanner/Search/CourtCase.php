@@ -14,7 +14,7 @@ Include("Search.php");
 	?>
 	<h2>Court Cases</h2>
 	<?php
-		// TODO Use inner joins to get all info and pretty up the table
-		buildTableFromQuery("SELECT * FROM CourtCase");
+		$colNames = array("Case ID", "Case Division", "Defendant ID", "Defence Attorney ID", "Prosecutor ID", "Judge ID");
+		buildTableFromQuery("SELECT * FROM CourtCase", $colNames);
 	?>
 </html>

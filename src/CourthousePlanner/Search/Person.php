@@ -14,6 +14,7 @@ Include("Search.php");
 	?>
 	<h2>People</h2>
 	<?php
-		buildTableFromQuery("SELECT * FROM Person");
+		$colNames = array("ID", "First Name", "Last Name", "Birth Date", "Phone Number", "Is Lawyer", "Is Judge");
+		buildTableFromQuery("SELECT * FROM Person", $colNames);
 	?>
 </html>
