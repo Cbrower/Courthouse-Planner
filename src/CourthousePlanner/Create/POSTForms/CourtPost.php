@@ -19,8 +19,7 @@ if(isset($_POST['submit']))
 {
     $district = $_POST['district'];
     $court_name = $_POST['courtName'];
-    $room_num = $_POST['roomNum'];
-    $sql = "INSERT INTO CourtRoom (district, court_name, room_num) VALUES ('$district','$court_name','$room_num')";
+    $sql = "INSERT INTO CourtRoom (district, court_name, room_num) VALUES ('$district','$court_name')";
     if (mysqli_query($conn, $sql)) {
         echo '<div style="font-size:1.25em;">New record has been added successfully !</div>';
     } else {
