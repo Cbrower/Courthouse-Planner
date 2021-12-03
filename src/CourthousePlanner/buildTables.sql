@@ -2,7 +2,6 @@ CREATE TABLE IF NOT EXISTS Courtroom(
 	room_id INTEGER NOT NULL AUTO_INCREMENT,
 	district VARCHAR(64),
 	court_name VARCHAR(64),
-	room_num INTEGER,
 	PRIMARY KEY(room_id)
 );
 CREATE TABLE IF NOT EXISTS Person(
