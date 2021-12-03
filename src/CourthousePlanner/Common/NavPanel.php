@@ -22,17 +22,6 @@
 		echo "</div>";
 		echo "</div>";
 		echo "<div class=\"dropdown\">";
-		echo "<button class=\"dropbtn\">Delete</button>";
-		echo "<div class=\"dropdown-content\">";
-		echo "<a href=\"#\">Appointment</a>";
-		echo "<a href=\"#\">Charge</a>";
-		echo "<a href=\"#\">Court Case</a>";
-		echo "<a href=\"#\">Courtroom</a>";
-		echo "<a href=\"#\">Penal Code</a>";
-		echo "<a href=\"#\">Person</a>";
-		echo "</div>";
-		echo "</div>";
-		echo "<div class=\"dropdown\">";
 		echo "<button class=\"dropbtn\">Search</button>";
 		echo "<div class=\"dropdown-content\">";
 		echo "<a href=\"" . $pathToMain . "Search/Appt.php\">Appointment</a>";
@@ -44,6 +33,7 @@
 		echo "</div>";
 		echo "</div>";
 		echo "<a href=\"#\">Appointment Confirmation</a>";
+		echo "<a href=\"" . $pathToMain . "Delete/Appointment.php\">Cancel Appointment</a>";
 		echo "</div>";
 	}
 ?>
