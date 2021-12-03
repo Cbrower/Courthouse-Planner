@@ -25,10 +25,12 @@ navPanel("../../");
     <div>
         <label for = "Found"> Found: </label>
         <p>
-            <input type="radio" id="guilty" name="outcome" value= TRUE>
+            <input type="radio" id="guilty" name="outcome" value= 1>
             <label for="guilty">Guilty</label><br>
-            <input type="radio" id="not_guilty" name="outcome" value= FALSE>
+            <input type="radio" id="not_guilty" name="outcome" value= 0>
             <label for="not_guilty">Not Guilty</label><br>
+            <input type="radio" id="NULL" name="outcome" value= NULL>
+            <label for="NULL">In Progress</label><br>
         </p>
     </div>
     <div class="submitbutton">
