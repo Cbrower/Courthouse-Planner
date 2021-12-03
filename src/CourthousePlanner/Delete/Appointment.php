@@ -20,7 +20,7 @@ Include("../Common/MySQLHelpers.php");
 			<?php
 				$ID_COL = "apt_id";
 				$mysqli = connectToDatabase();
-				$id_res = $mysqli->query("Select " . $ID_COL . " FROM Person");
+				$id_res = $mysqli->query("Select " . $ID_COL . " FROM Appointment");
 				if (!$id_res) {
 					die("Query to show id from table failed");
 				}

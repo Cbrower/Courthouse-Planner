@@ -32,7 +32,7 @@
 		echo "<a href=\"" . $pathToMain . "Search/Person.php\">Person</a>";
 		echo "</div>";
 		echo "</div>";
-		echo "<a href=\"#\">Appointment Confirmation</a>";
+		echo "<a href=\"" . $pathToMain . "ApptConf.php\">Appointment Confirmation</a>";
 		echo "<a href=\"" . $pathToMain . "Delete/Appointment.php\">Cancel Appointment</a>";
 		echo "</div>";
 	}
