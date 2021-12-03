@@ -27,7 +27,7 @@ navPanel("../../");
         <input type = "number" name = "filingFee" required = "required" placeholder = "$00.00"/>
     </div>
     <div>
-        <label for = "Penal Code"> Penal Code: </label>
+        <label for = "Crime Code"> Crime Code: </label>
         <input type = "number" name = "penal_code" required = "required" placeholder = "01-001" />
     </div>
     <div>
