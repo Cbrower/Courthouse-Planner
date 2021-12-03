@@ -22,10 +22,6 @@ navPanel("../../");
         <label for = "Court Name"> Court Name: </label>
         <input type = "text" name = "courtName" required = "required" placeholder = "Name" />
     </div>
-    <div>
-        <label for = "Room Number"> Room Number: </label>
-        <input type = "number" name = "roomNum" required = "required" placeholder = "001"/>
-    </div>
     <div class="submitbutton">
         <button name = "submit" value = "submit" type="submit">Register</button>
     </div>
