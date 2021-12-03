@@ -34,5 +34,7 @@ navPanel("../../");
         <label for = "Judge ID"> Judge ID: </label>
         <input type = "number" name = "judgeID" required = "required" placeholder = "123-456-789"/>
     </div>
-    <button name = "submit" value = "submit" type="submit">Register</button>
+    <div class="submitbutton">
+        <button name = "submit" value = "submit" type="submit">Register</button>
+    </div>
 </form>

@@ -33,5 +33,7 @@ navPanel("../../");
         <label for = "Law Description"> Law Description: </label>
         <input type = "text" name = "law_desc" required = "required" placeholder = "Description of the Law"/>
     </div>
-    <button name = "submit" value = "submit" type="submit">Register</button>
+    <div class="submitbutton">
+        <button name = "submit" value = "submit" type="submit">Register</button>
+    </div>
 </form>

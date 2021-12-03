@@ -34,5 +34,7 @@ navPanel("../../");
         <label for = "Date"> Date: </label>
         <input type = "date" name = "date" required = "required" placeholder = "mm/dd/yyyy" />
     </div>
-    <button name = "submit" value = "submit" type="submit">Register</button>
-    </form>
+    <div class="submitbutton">
+        <button name = "submit" value = "submit" type="submit">Register</button>
+    </div>
+</form>

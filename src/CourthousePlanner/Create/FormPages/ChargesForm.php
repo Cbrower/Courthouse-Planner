@@ -31,7 +31,7 @@ navPanel("../../");
             <label for="not_guilty">Not Guilty</label><br>
         </p>
     </div>
-    <div>
+    <div class="submitbutton">
         <button name = "submit" value = "submit" type="submit">Register</button>
     </div>
 </form>

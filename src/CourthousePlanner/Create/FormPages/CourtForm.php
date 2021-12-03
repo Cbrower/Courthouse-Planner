@@ -26,5 +26,7 @@ navPanel("../../");
         <label for = "Room Number"> Room Number: </label>
         <input type = "number" name = "roomNum" required = "required" placeholder = "001"/>
     </div>
-    <button name = "submit" value = "submit" type="submit">Register</button>
+    <div class="submitbutton">
+        <button name = "submit" value = "submit" type="submit">Register</button>
+    </div>
 </form>

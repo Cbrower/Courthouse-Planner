@@ -6,13 +6,11 @@ Include("../../Common/NavPanel.php");
         <h1>Courtroom Planner</h1>
     </div>
     <link rel="stylesheet" href="../../Styles/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="../../Styles/FormStyle.css">
 </head>
 <?php
 navPanel("../../");
 ?>
-<head>
-    <link rel="stylesheet" type="text/css" href="../../Styles/FormStyle.css">
-</head>
 <form action = ../POSTForms/PersonPost.php method = "post">
     <div>
         <label for = "First Name"> First Name: </label>
@@ -41,5 +39,7 @@ navPanel("../../");
             <label for="Judge">Judge</label>
         </p>
     </div>
-    <button type="submit" value="submit" name="submit">Register</button>
+    <div class="submitbutton">
+        <button type="submit" value="submit" name="submit">Register</button>
+    </div>
 </form>

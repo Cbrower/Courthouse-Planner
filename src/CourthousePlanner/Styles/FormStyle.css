@@ -47,7 +47,7 @@ label {
 
 }
 
-button {
+.submitbutton button {
 
     float: left;
 
@@ -65,7 +65,7 @@ button {
 
 }
 
-button:hover{
+.submitbutton button:hover{
 
     background: rgb(0, 0, 0);
 
