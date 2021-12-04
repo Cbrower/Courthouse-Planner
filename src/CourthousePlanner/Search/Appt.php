@@ -14,7 +14,7 @@ Include("Search.php");
 	?>
 	<h2>Appointments</h2>
 	<?php
-		$colNames = array("Appointment ID", "Case ID", "Room ID", "Filing Fee", "Crime Code");
+		$colNames = array("Appointment ID", "Case ID", "Room ID", "Filing Fee", "Crime Code", "Date");
 		buildTableFromQuery("SELECT * FROM Appointment", $colNames);
 	?>
 </html>
