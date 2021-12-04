@@ -13,7 +13,7 @@ Include("Common/MySQLHelpers.php");
 		navPanel("./");
 		$mysqli = connectToDatabase();
 		if (array_key_exists("apt_id", $_POST)) {
-			$cmd = "SELECT A.filing_fee, A.crime_code, A.case_id, R.court_name, R.room_num, ";
+			$cmd = "SELECT A.filing_fee, A.crime_code, A.case_id, R.court_name, ";
 			$cmd = $cmd . "CONCAT(P1.first_name, ' ', P1.last_name) as defendent, ";
 			$cmd = $cmd . "CONCAT(P2.first_name, ' ', P2.last_name) as defence_attorney, ";
 			$cmd = $cmd . "CONCAT(P3.first_name, ' ', P3.last_name) as prosecutor, ";
@@ -34,7 +34,6 @@ Include("Common/MySQLHelpers.php");
 				echo "<table>";
 				echo "<tr><td>Appointment ID:</td> <td>" . $_POST["apt_id"] . "</td></tr>";
 				echo "<tr><td>Location:</td> <td>" . $row["court_name"] . "</td></tr>";
-				echo "<tr><td>Room Number:</td> <td>" . $row["room_num"] . "</td></tr>";
 				echo "<tr><td>Defendent:</td> <td>" . $row["defendent"] . "</td></tr>";
 				echo "<tr><td>Defence Attorney:</td> <td>" . $row["defence_attorney"] . "</td></tr>";
 				echo "<tr><td>Prosecutor:</td> <td>" . $row["prosecutor"] . "</td></tr>";
