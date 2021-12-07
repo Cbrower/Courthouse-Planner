@@ -6,7 +6,6 @@ Include("../Common/MySQLHelpers.php");
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <link rel="stylesheet" type="text/css" href="../Styles/NavBar.css" />
 </head>
 
@@ -15,7 +14,7 @@ Include("../Common/MySQLHelpers.php");
 
     </div>
     <?php
-    navPanel("../");
+        navPanel("../");
     ?>
     <div style="text-align: left;" >
         <h2> Update Person </h2>
