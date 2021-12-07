@@ -7,7 +7,7 @@ Include("../Common/MySQLHelpers.php");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="Styles/NavBar.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/NavBar.css" />
 </head>
 
 <div id="wrapper">
@@ -15,7 +15,7 @@ Include("../Common/MySQLHelpers.php");
 
     </div>
     <?php
-    navPanel("./");
+    navPanel("../");
     ?>
     <div style="text-align: left;" >
         <h2> Update Person </h2>
@@ -32,7 +32,7 @@ Include("../Common/MySQLHelpers.php");
         {
             $apt_id = $_POST['pid'];
 
-            $query = "SELECT * FROM Person WHERE pid='$pid' ";
+            $query = "SELECT * FROM Person WHERE pid='$apt_id' ";
             $query_run = $mysqli->query($query);
 
             while ($row = mysqli_fetch_array($query_run))
@@ -70,8 +70,7 @@ Include("../Common/MySQLHelpers.php");
 </html>
 
 <?php
-$connection = mysqli_connect("localhost","christinasoto","Sparky!746","CourthousePlanner","8889");
-$db = mysqli_select_db($connection,'CourthousePlanner');
+$mysqli = connectToDatabase();
 
 if(isset($_POST['update']))
 {
@@ -81,7 +80,7 @@ if(isset($_POST['update']))
     $crime_code = $_POST['phone_number'];
 
     $query = "UPDATE Person SET first_name = '$_POST[first_name]', last_name = '$_POST[last_name]',birth_date = '$_POST[birth_date]',phone_number = '$_POST[phone_number]' WHERE pid='$_POST[pid]' ";
-    $query_run = mysqli_query($connection,$query);
+    $query_run = $mysqli->query($query);
     if($query_run)
     {
         echo '<script> alert("Person Updated") </script>';

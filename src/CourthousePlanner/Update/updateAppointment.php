@@ -6,8 +6,7 @@ Include("../Common/MySQLHelpers.php");
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <link rel="stylesheet" type="text/css" href="Styles/NavBar.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/NavBar.css" />
 </head>
 
 <div id="wrapper">
@@ -15,7 +14,7 @@ Include("../Common/MySQLHelpers.php");
 
     </div>
     <?php
-    navPanel("./");
+    navPanel("../");
     ?>
     <div style="text-align: left;" >
         <h2> Update Appointment </h2>
@@ -35,7 +34,7 @@ Include("../Common/MySQLHelpers.php");
             $query = "SELECT * FROM Appointment where apt_id='$apt_id' ";
             $query_run = $mysqli->query($query);
 
-            for($query_run as $row)
+            while ($row = mysqli_fetch_array($query_run))
             {
                 ?>
                 <form action="" method="POST" >
@@ -70,8 +69,7 @@ Include("../Common/MySQLHelpers.php");
 </html>
 
 <?php
-$connection = mysqli_connect("localhost","christinasoto","Sparky!746","CourthousePlanner","8889");
-$db = mysqli_select_db($connection,'CourthousePlanner');
+$mysqli = connectToDatabase();
 
 if(isset($_POST['update']))
 {
@@ -81,7 +79,7 @@ if(isset($_POST['update']))
     $crime_code = $_POST['crime_code'];
 
     $query = "UPDATE Appointment SET case_id = '$_POST[case_id]', room_id = '$_POST[room_id]',filing_fee = '$_POST[filing_fee]',crime_code = '$_POST[crime_code]' WHERE apt_id='$_POST[apt_id]' ";
-    $query_run = mysqli_query($connection,$query);
+    $query_run = $mysqli->query($query);
     if($query_run)
     {
         echo '<script> alert("Appointment Updated") </script>';
