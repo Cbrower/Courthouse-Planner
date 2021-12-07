@@ -17,12 +17,8 @@
 		echo "<div class=\"dropdown\">";
 		echo "<button class=\"dropbtn\">Update</button>";
 		echo "<div class=\"dropdown-content\">";
-		echo "<a href=\"#\">Appointment</a>";
-		echo "<a href=\"#\">Charge</a>";
-		echo "<a href=\"#\">Court Case</a>";
-		echo "<a href=\"#\">Courtroom</a>";
-		echo "<a href=\"#\">Penal Code</a>";
-		echo "<a href=\"#\">Person</a>";
+		echo "<a href=\"" . $pathToMain . "Update/updateAppointment.php\">Appointment</a>";
+		echo "<a href=\"" . $pathToMain . "Update/updatePerson.php\">Person</a>";
 		echo "</div>";
 		echo "</div>";
 		echo "<div class=\"dropdown\">";
