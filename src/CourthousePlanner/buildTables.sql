@@ -32,7 +32,9 @@ CREATE TABLE IF NOT EXISTS CrimeDict(
 	penal_code INTEGER NOT NULL,
 	law_desc VARCHAR,
 	crime_type INTEGER,
-	PRIMARY KEY(penal_code)
+	PRIMARY KEY(penal_code),
+	CHECK (crime_type >= 0),
+	CHECK (crime_type <= 2)
 );
 CREATE TABLE IF NOT EXISTS Charges(
 	case_id INTEGER NOT NULL,
